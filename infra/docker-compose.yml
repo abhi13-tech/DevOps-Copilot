@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: ../backend
+    container_name: devops-copilot-backend
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - DB_PATH=/data/app.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - backend_data:/data
+  frontend:
+    build: ../frontend
+    container_name: devops-copilot-frontend
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+volumes:
+  backend_data:

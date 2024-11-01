@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next { height: 100%; }
+
+/* Minimal futuristic dark theme */
+body {
+  @apply text-gray-100 antialiased;
+  background: radial-gradient(1000px 600px at 10% 10%, rgba(59,130,246,0.12), transparent 60%),
+              radial-gradient(1000px 600px at 90% 20%, rgba(34,197,94,0.10), transparent 60%),
+              radial-gradient(800px 500px at 50% 100%, rgba(168,85,247,0.08), transparent 60%),
+              #0b0f17;
+}
+
+.sidebar-link {@apply block px-3 py-2 rounded transition-colors duration-200 text-gray-300 hover:text-white hover:bg-white/10;}
+
+/* Glass panels and buttons */
+.glass-card {@apply bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl shadow-xl;}
+.panel {@apply glass-card p-4;}
+.btn {@apply inline-flex items-center gap-2 px-4 py-2 rounded-md transition-all duration-200 active:scale-[0.98];}
+.btn-primary {@apply btn bg-blue-600 hover:bg-blue-500 text-white shadow-[0_0_20px_rgba(37,99,235,0.35)];}
+.btn-secondary {@apply btn bg-white/10 hover:bg-white/20 text-white;}
+.btn-ghost {@apply btn bg-transparent hover:bg-white/10 text-gray-200;}
+.badge {@apply inline-flex items-center px-2 py-0.5 rounded text-xs;}
+.badge-ok {@apply badge bg-emerald-500/20 text-emerald-300;}
+.badge-warn {@apply badge bg-amber-500/20 text-amber-300;}
+.badge-err {@apply badge bg-rose-500/20 text-rose-300;}
+.heading-gradient {@apply bg-clip-text text-transparent; background-image: linear-gradient(90deg, #93c5fd, #a78bfa);}
+
+/* Log viewer */
+.log-viewer {@apply bg-black/60 text-emerald-200 p-4 rounded-xl h-80 overflow-auto text-sm whitespace-pre-wrap border border-white/10;}

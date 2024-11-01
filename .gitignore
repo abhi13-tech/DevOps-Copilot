@@ -1,0 +1,15 @@
+scripts/backdate-commits.mjs
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Env
+infra/.env
