@@ -47,3 +47,4 @@ export default function Layout({ title, subtitle, children }: Props) {
     </div>
   );
 }
+// meta: housekeeping note 2024-11-01T17:26:20-04:00
