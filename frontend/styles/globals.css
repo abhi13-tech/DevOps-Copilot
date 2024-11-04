@@ -30,3 +30,4 @@ body {
 
 /* Log viewer */
 .log-viewer {@apply bg-black/60 text-emerald-200 p-4 rounded-xl h-80 overflow-auto text-sm whitespace-pre-wrap border border-white/10;}
+/* meta: housekeeping note 2024-11-04T15:33:27-05:00 */
