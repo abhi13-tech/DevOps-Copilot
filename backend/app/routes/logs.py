@@ -45,3 +45,4 @@ def get_logs(pipeline_id: str, limit: int = 50, offset: int = 0, q: Optional[str
     if logs is None:
         raise HTTPException(status_code=404, detail="pipeline or logs not found")
     return logs
+# meta: housekeeping note 2024-11-04T16:09:26-05:00
