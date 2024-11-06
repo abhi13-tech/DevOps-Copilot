@@ -108,3 +108,4 @@ export default function Home() {
     </Layout>
   );
 }
+// meta: housekeeping note 2024-11-06T10:38:43-05:00
