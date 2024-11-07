@@ -106,3 +106,4 @@ def json_dumps_safe(obj) -> str:
     except Exception:
         return "{}"
 
+# meta: housekeeping note 2024-11-07T11:21:29-05:00
