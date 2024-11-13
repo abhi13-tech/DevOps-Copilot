@@ -37,3 +37,4 @@ def create_app() -> FastAPI:
 
 
 app = create_app()
+# meta: housekeeping note 2024-11-13T12:09:21-05:00
