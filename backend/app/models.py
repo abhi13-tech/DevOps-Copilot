@@ -290,3 +290,4 @@ def list_agent_actions(task_id: int) -> List[Dict[str, Any]]:
             (task_id,),
         )
         return [dict(row) for row in cur.fetchall()]
+# meta: housekeeping note 2024-11-14T10:59:49-05:00
