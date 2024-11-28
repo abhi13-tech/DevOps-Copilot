@@ -169,3 +169,4 @@ Optional (real AI): `echo "OPENAI_API_KEY=sk-..." > infra/.env && cd infra && do
 ## License
 - For demo and evaluation purposes. Add a license file to suit your needs.
 <!-- meta: housekeeping note 2024-11-28T11:51:08-05:00 -->
+<!-- meta: housekeeping note 2024-11-28T13:36:46-05:00 -->
